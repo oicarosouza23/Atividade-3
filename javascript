@@ -23,3 +23,9 @@ app.get('/sobre', (req, res) => {
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
 });
+
+
+// interatividade com JavaScript em public/js/script.js:
+document.querySelector('form').addEventListener('submit', function(event) {
+  alert('Formulário enviado com sucesso!');
+});
